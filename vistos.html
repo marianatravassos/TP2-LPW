@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes Vistos</title>
+    <link rel="stylesheet" href="styleinicio.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="inicio.html" class="nav-link">Filmes</a>
+        <a href="vistos.html" class="nav-link">Vistos</a>
+    </nav>
+
+    <main class="movie-list">
+        <h1 class="title">Filmes Vistos</h1>
+        <div class="movies" id="movies-container">
+    
+        </div>
+    </main>
+
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", () => {
+            const moviesContainer = document.getElementById("movies-container");
+
+            const watchedMovies = JSON.parse(localStorage.getItem("watchedMovies")) || [];
+
+            if (watchedMovies.length === 0) {
+                moviesContainer.innerHTML = "<p>Nenhum filme foi adicionado à lista ainda.</p>";
+            } else {
+                watchedMovies.forEach(movie => {
+                    const movieCard = document.createElement("div");
+                    movieCard.classList.add("movie-card");
+
+              
+                    const imageName = movie.toLowerCase().replace(/ /g, "-").replace(/[^a-z0-9-]/g, "");
+                    movieCard.innerHTML = `
+                        <img src="imagens/${imageName}.jpg" alt="${movie}">
+                        <p>${movie}</p>
+                    `;
+                    moviesContainer.appendChild(movieCard);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

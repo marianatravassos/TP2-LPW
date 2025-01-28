@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url(inicial.png);
+    background-image: url(/inicial.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -38,6 +38,17 @@ h2 {
     width: 100%;
     padding: 10px;
     background-color: #972727;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn-criar {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
     color: white;
     border: none;
     border-radius: 4px;
