@@ -80,3 +80,36 @@ body {
     font-weight: bold;
     margin: 0;
 }
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #8a0000;
+    color: white;
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #3d3d3d;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
+  #myBtn{
+    background: linear-gradient(to right, #9a0033, #440012);
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
