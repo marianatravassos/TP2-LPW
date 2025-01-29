@@ -1,5 +1,5 @@
 # TP2-LPW
-
+Sallum olha os outros Branchs quando for avaliar que meus commits estão lá 👍
 Coisa para fazer: Permitir que o usuário crie conteúdo (e.g., tarefas, playlists, avatares, enquetes etc.) durante sua interação com a aplicação (1 ponto)
 
 A criação de conteúdo deve envolver a criação/atualização/remoção de elementos HTML da página (manipulação do DOM)
