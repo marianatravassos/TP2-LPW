@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url(/inicial.png);
+    background-image: url(inicial.png);
     background-size: cover;
     background-repeat: no-repeat;
 }

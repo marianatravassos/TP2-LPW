@@ -16,6 +16,6 @@ window.addEventListener('click', function(event){
 
 cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
   alert('Código Konami ativado!');
-  document.body.style.backgroundImage = 'url(/paginas_filmes/imgs/SalumLoss.jpg)';
+  document.body.style.backgroundImage = 'url(paginas_filmes/imgs/SalumLoss.jpg)';
   
 });
