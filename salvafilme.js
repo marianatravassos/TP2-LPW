@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 alert(`${movieTitle} já está na sua lista.`);
             }
-   
         });
     }
 });

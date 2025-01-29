@@ -36,8 +36,7 @@
               
                     const imageName = movie.toLowerCase().replace(/ /g, "-").replace(/[^a-z0-9-]/g, "");
                     movieCard.innerHTML = `
-                        <img src="imagens/${imageName}.jpg" alt="${movie}">
-                        <img src="/paginas_filmes/imgs/${imageName}.jpg" alt="${movie}">
+                        <img src="paginas_filmes/imgs/${imageName}.jpg" alt="${movie}">
                         <p>${movie}</p>
                     `;
                     moviesContainer.appendChild(movieCard);
