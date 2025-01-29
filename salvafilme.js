@@ -14,9 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 alert(`${movieTitle} já está na sua lista.`);
             }
-            function mudarTexto() {
-    document.getElementById("mensagem").innerHTML = "Texto alterado com sucesso!";
-}
+   
         });
     }
 });
