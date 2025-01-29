@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: "Courguette", serif;
-    background-image: url(/fundoo.avif);
+    background-image: url(fundoo.avif);
     background-size: cover;
     background-repeat: no-repeat;
 }
